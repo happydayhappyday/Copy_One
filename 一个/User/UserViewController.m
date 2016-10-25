@@ -16,9 +16,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.ShowTableview.delegate = self;
+    self.ShowTableview.dataSource = self;
+    //去掉多余的cell线
+    self.ShowTableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
+- (IBAction)GobackClick:(UIButton *)sender {
+    NSLog(@"你点击了");
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
+- (IBAction)ToXiaojiClick:(UIButton *)sender {
+    NSLog(@"跳转到小记");
+}
+- (IBAction)ToGedanClick:(UIButton *)sender {
+     NSLog(@"跳转到歌单");
+}
+
+- (IBAction)To:(UIButton *)sender {
+      NSLog(@"跳转到vhfjk");
+}
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 0;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectio
+{
+    return 6;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+    [super viewWillAppear:animated];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillDisappear:animated];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

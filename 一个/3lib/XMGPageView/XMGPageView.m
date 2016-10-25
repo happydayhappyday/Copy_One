@@ -1,15 +1,10 @@
 //
 //  XMGPageView.m
-//  08-分页
+//  滚动视图
 //
-//  Created by xiaomage on 15/5/28.
-//  Copyright (c) 2015年 小码哥. All rights reserved.
+//  Created by xiayuanqun on 16/8/26.
+//  Copyright © 2016年 xiayuanqun. All rights reserved.
 //
-
-// 框架：
-// 1.苹果官方的框架:UIKit
-// 2.自定义框架
-// 3.第三方框架:流媒体
 
 #import "XMGPageView.h"
 
@@ -110,13 +105,13 @@
     
     // 设置总页数
     self.pageControl.numberOfPages = imageNames.count;
-//    if (imageNames.count <= 1) {
-//        self.pageControl.hidden = YES;
-//    } else {
-//        self.pageControl.hidden = NO;
-//    }
-//    self.pageControl.hidden = imageNames.count <= 1;
-//    self.pageControl.hidesForSinglePage = YES;
+    //    if (imageNames.count <= 1) {
+    //        self.pageControl.hidden = YES;
+    //    } else {
+    //        self.pageControl.hidden = NO;
+    //    }
+    //    self.pageControl.hidden = imageNames.count <= 1;
+    //    self.pageControl.hidesForSinglePage = YES;
 }
 
 - (void)setCurrentColor:(UIColor *)currentColor
@@ -178,4 +173,6 @@
     [self.scrollView setContentOffset:offset animated:YES];   // animate at constant velocity to new offset
     NSLog(@"nextPage");
 }
+
 @end
+
