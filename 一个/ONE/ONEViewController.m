@@ -32,9 +32,7 @@
    // self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(ViewChangeTo_Search)];
  //   self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(ViewChangeTo_Search)];
     
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 516, 320, 1)];
-    view.backgroundColor = PICColor;
-    [self.view addSubview:view];
+
     
     
 }
@@ -57,6 +55,7 @@
 }
 -(void) ViewChangeTo_UserInfo{
     UserViewController *userVC = [self.storyboard instantiateViewControllerWithIdentifier:@"UserVC"];
+    [userVC setHidesBottomBarWhenPushed:YES];
     [self.navigationController pushViewController:userVC animated:YES];
 }
 /*

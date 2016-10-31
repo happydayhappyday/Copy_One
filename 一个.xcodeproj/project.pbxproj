@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2009E07D1DC73E4B00307F91 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2009E07B1DC73E4B00307F91 /* ReadTableViewCell.m */; };
+		2009E07E1DC73E4B00307F91 /* ReadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2009E07C1DC73E4B00307F91 /* ReadTableViewCell.xib */; };
 		2D8C43B31DC7096E001481D1 /* 个人.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43201DC7096E001481D1 /* 个人.png */; };
 		2D8C43B41DC7096E001481D1 /* 搜索背景.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43211DC7096E001481D1 /* 搜索背景.PNG */; };
 		2D8C43B51DC7096E001481D1 /* img_00.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43AD1DC7096E001481D1 /* img_00.png */; };
@@ -63,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2009E07A1DC73E4B00307F91 /* ReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTableViewCell.h; sourceTree = "<group>"; };
+		2009E07B1DC73E4B00307F91 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
+		2009E07C1DC73E4B00307F91 /* ReadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReadTableViewCell.xib; sourceTree = "<group>"; };
 		2D8C43201DC7096E001481D1 /* 个人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "个人.png"; sourceTree = "<group>"; };
 		2D8C43211DC7096E001481D1 /* 搜索背景.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "搜索背景.PNG"; sourceTree = "<group>"; };
 		2D8C43AD1DC7096E001481D1 /* img_00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_00.png; sourceTree = "<group>"; };
@@ -148,9 +153,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2009E0791DC73E3600307F91 /* ReadTableView */ = {
+			isa = PBXGroup;
+			children = (
+				2009E07A1DC73E4B00307F91 /* ReadTableViewCell.h */,
+				2009E07B1DC73E4B00307F91 /* ReadTableViewCell.m */,
+				2009E07C1DC73E4B00307F91 /* ReadTableViewCell.xib */,
+			);
+			path = ReadTableView;
+			sourceTree = "<group>";
+		};
 		2D8C43BB1DC70AC1001481D1 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				2009E0791DC73E3600307F91 /* ReadTableView */,
 				2D8C43BC1DC70AC1001481D1 /* usertableView */,
 			);
 			path = view;
@@ -470,6 +486,7 @@
 				2D8C43B61DC7096E001481D1 /* img_01.png in Resources */,
 				2DF9C5491DB8AAA200CE9A73 /* 滑稽.jpg in Resources */,
 				2D8C43BA1DC7096E001481D1 /* zoomoutsolids.png in Resources */,
+				2009E07E1DC73E4B00307F91 /* ReadTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +520,7 @@
 				2DF9C5371DB8A6EA00CE9A73 /* ONEViewController.m in Sources */,
 				2DE4590C1DABBF0C00B6DEE5 /* ViewController.m in Sources */,
 				2DF9C5361DB8A6EA00CE9A73 /* ONENavigationController.m in Sources */,
+				2009E07D1DC73E4B00307F91 /* ReadTableViewCell.m in Sources */,
 				2DE459091DABBF0C00B6DEE5 /* AppDelegate.m in Sources */,
 				2D9FF79C1DB6714C00B47DC7 /* UserViewController.m in Sources */,
 				2DF9C5461DB8A73500CE9A73 /* OneConst.m in Sources */,

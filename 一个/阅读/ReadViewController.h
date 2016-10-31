@@ -8,6 +8,7 @@
 
 #import "ONEViewController.h"
 
-@interface ReadViewController : ONEViewController
+@interface ReadViewController : ONEViewController<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *ReadTableView;
 
 @end

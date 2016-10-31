@@ -12,7 +12,8 @@
 
 
 
-@interface UserViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface UserViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *ShowTableview;
+@property (weak, nonatomic) IBOutlet UIScrollView *ScrollView;
 
 @end

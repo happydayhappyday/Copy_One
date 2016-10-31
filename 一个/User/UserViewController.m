@@ -7,8 +7,12 @@
 //
 
 #import "UserViewController.h"
-
-@interface UserViewController ()
+#import "UserTableViewCell.h"
+@interface UserViewController (){
+    UserTableViewCell *cell_User;
+    NSArray *typeArray1;
+    NSArray *typeArray2;
+}
 
 @end
 
@@ -18,8 +22,12 @@
     [super viewDidLoad];
     self.ShowTableview.delegate = self;
     self.ShowTableview.dataSource = self;
+    self.ScrollView.delegate = self;
     //去掉多余的cell线
     self.ShowTableview.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    
+     typeArray1= [[NSArray alloc]initWithObjects:@"图文",@"文章",@"电影",@"消息",@"夜间模式",@"其他设置",nil];
+     //typeArray2= [[NSArray alloc]initWithObjects:, nil];
 }
 
 - (IBAction)GobackClick:(UIButton *)sender {
@@ -39,16 +47,37 @@
 }
 
 
-
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 0;
+    return 2;
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectio
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    if(section == 0)
+        return 4;
+    else
+        return 2;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(cell_User ==nil){
+        cell_User = [tableView dequeueReusableCellWithIdentifier:@"UserCell"];
+    }
+    
+    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"UserTableViewCell" owner:nil options:nil];
+    cell_User = [nib objectAtIndex:0];
+    cell_User.typetext.text = [typeArray1 objectAtIndex:indexPath.row];
+    
+    
+    return cell_User;
+}
+-(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    if(section == 0)
+        return @"收藏";
+    else
+        return @"设置";
 }
 
 -(void)viewWillAppear:(BOOL)animated{
