@@ -15,6 +15,8 @@
 		2D8C43B81DC7096E001481D1 /* img_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43B01DC7096E001481D1 /* img_04.png */; };
 		2D8C43B91DC7096E001481D1 /* lauch.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43B11DC7096E001481D1 /* lauch.PNG */; };
 		2D8C43BA1DC7096E001481D1 /* zoomoutsolids.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43B21DC7096E001481D1 /* zoomoutsolids.png */; };
+		2D8C43C01DC70ADF001481D1 /* UserTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8C43BE1DC70ADF001481D1 /* UserTableViewCell.m */; };
+		2D8C43C11DC70ADF001481D1 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D8C43BF1DC70ADF001481D1 /* UserTableViewCell.xib */; };
 		2D9FF79C1DB6714C00B47DC7 /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FF79B1DB6714C00B47DC7 /* UserViewController.m */; };
 		2DE459061DABBF0C00B6DEE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE459051DABBF0C00B6DEE5 /* main.m */; };
 		2DE459091DABBF0C00B6DEE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE459081DABBF0C00B6DEE5 /* AppDelegate.m */; };
@@ -69,6 +71,9 @@
 		2D8C43B01DC7096E001481D1 /* img_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_04.png; sourceTree = "<group>"; };
 		2D8C43B11DC7096E001481D1 /* lauch.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lauch.PNG; sourceTree = "<group>"; };
 		2D8C43B21DC7096E001481D1 /* zoomoutsolids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoomoutsolids.png; sourceTree = "<group>"; };
+		2D8C43BD1DC70ADF001481D1 /* UserTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewCell.h; sourceTree = "<group>"; };
+		2D8C43BE1DC70ADF001481D1 /* UserTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewCell.m; sourceTree = "<group>"; };
+		2D8C43BF1DC70ADF001481D1 /* UserTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		2D9FF79A1DB6714C00B47DC7 /* UserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
 		2D9FF79B1DB6714C00B47DC7 /* UserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
 		2DE459011DABBF0C00B6DEE5 /* 一个.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "一个.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +148,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D8C43BB1DC70AC1001481D1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C43BC1DC70AC1001481D1 /* usertableView */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		2D8C43BC1DC70AC1001481D1 /* usertableView */ = {
+			isa = PBXGroup;
+			children = (
+				2D8C43BD1DC70ADF001481D1 /* UserTableViewCell.h */,
+				2D8C43BE1DC70ADF001481D1 /* UserTableViewCell.m */,
+				2D8C43BF1DC70ADF001481D1 /* UserTableViewCell.xib */,
+			);
+			path = usertableView;
+			sourceTree = "<group>";
+		};
 		2D9FF7981DB6689800B47DC7 /* 常量文件 */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +210,7 @@
 		2DE459031DABBF0C00B6DEE5 /* 一个 */ = {
 			isa = PBXGroup;
 			children = (
+				2D8C43BB1DC70AC1001481D1 /* view */,
 				2DF9C5481DB8AAA200CE9A73 /* 滑稽.jpg */,
 				2D9FF7981DB6689800B47DC7 /* 常量文件 */,
 				2DEB65931DB34584006DE98C /* images */,
@@ -430,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEB65951DB34584006DE98C /* 首页.PNG in Resources */,
+				2D8C43C11DC70ADF001481D1 /* UserTableViewCell.xib in Resources */,
 				2DF9C54B1DB8B9B300CE9A73 /* 小记.png in Resources */,
 				2D8C43B91DC7096E001481D1 /* lauch.PNG in Resources */,
 				2D8C43B41DC7096E001481D1 /* 搜索背景.PNG in Resources */,
@@ -469,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8C43C01DC70ADF001481D1 /* UserTableViewCell.m in Sources */,
 				2DF9C53E1DB8A70E00CE9A73 /* MusicViewController.m in Sources */,
 				2DF9C53B1DB8A70500CE9A73 /* MovieViewController.m in Sources */,
 				2DF9C5411DB8A71600CE9A73 /* ReadViewController.m in Sources */,
